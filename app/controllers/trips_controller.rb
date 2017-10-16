@@ -1,5 +1,6 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:edit, :create, :update, :destroy]
 
   def index
     @trips = Trip.all
@@ -17,6 +18,7 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(trip_params)
+    @trip.memberships.new(user_id: current_user.id, organizer: true)
 
     respond_to do |format|
       if @trip.save

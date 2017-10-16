@@ -1,12 +1,6 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
-
-  def index
-    @profiles = Profile.all
-  end
-
-  def show
-  end
+  before_action :authenticate_user!, only: [:edit, :create, :update, :destroy]
 
   def new
     @profile = Profile.new
@@ -16,7 +10,7 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    @profile = Profile.new(profile_params)
+    @profile = current_user.build_profile(profile_params)
 
     respond_to do |format|
       if @profile.save
@@ -51,7 +45,7 @@ class ProfilesController < ApplicationController
 
   private
     def set_profile
-      @profile = Profile.find(params[:id])
+      @profile = current_user.profile
     end
 
     def profile_params
