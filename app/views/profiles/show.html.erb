@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @profile.description %>
+</p>
+
+<p>
+  <strong>First aid:</strong>
+  <%= @profile.first_aid %>
+</p>
+
+<p>
+  <strong>Wilderness first aid:</strong>
+  <%= @profile.wilderness_first_aid %>
+</p>
+
+<p>
+  <strong>Previous trips:</strong>
+  <%= @profile.previous_trips %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @profile.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @profile.gender %>
+</p>
+
+<p>
+  <strong>Training:</strong>
+  <%= @profile.training %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @profile.city %>
+</p>
+
+<p>
+  <strong>Favourite park:</strong>
+  <%= @profile.favourite_park %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  first_aid: false
+  wilderness_first_aid: false
+  previous_trips: false
+  age: 1
+  gender: MyString
+  training: MyText
+  city: MyString
+  favourite_park: MyString
+
+two:
+  description: MyText
+  first_aid: false
+  wilderness_first_aid: false
+  previous_trips: false
+  age: 1
+  gender: MyString
+  training: MyText
+  city: MyString
+  favourite_park: MyString

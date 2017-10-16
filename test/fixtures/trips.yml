@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2017-10-15 23:13:25
+  end_date: 2017-10-15 23:13:25
+  title: MyString
+  description: MyText
+  max_participants: 1
+
+two:
+  start_date: 2017-10-15 23:13:25
+  end_date: 2017-10-15 23:13:25
+  title: MyString
+  description: MyText
+  max_participants: 1
