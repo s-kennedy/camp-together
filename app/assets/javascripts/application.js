@@ -10,5 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery-2.1.3.min
+//= require modernizr
+//= require pace.min
+//= require plugins
+//= require main
 //= require turbolinks
 //= require_tree .
