@@ -1856,18 +1856,23 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: 6rem;
 }
 
-#coming-soon .subscribe-form form .email-input {
+#coming-soon form .email-input {
   display: flex;
 }
 
-#coming-soon .subscribe-form form input[type='email'] {
+#mc_embed_signup form .email-input .mc-field-group {
   flex-grow: 1;
 }
 
-#coming-soon .subscribe-form form input[type='submit'] {
+#mc_embed_signup form .email-input .mc-field-group input[type='email'] {
+  width: 100%;
+}
+
+#mc_embed_signup form .email-input input[type='submit'] {
   height: 6rem;
   line-height: 6rem;
 }
+
 /* -------------------------------------------------------------------
  * responsive:
  * about
