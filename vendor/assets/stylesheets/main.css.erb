@@ -1557,7 +1557,7 @@ header .header-logo a {
 }
 .home-content-tablecell h1 {
   font-family: "montserrat-bold", serif;
-  font-size: 9rem;
+  font-size: 8rem;
   line-height: 1.133;
   color: #FFFFFF;
 }
@@ -1676,7 +1676,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 2.1rem;
   }
   .home-content-tablecell h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1813,6 +1813,61 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: 6rem;
 }
 
+
+/* ===================================================================
+ *  12. coming-soon - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#coming-soon {
+  position: relative;
+  padding: 4.2rem 0 12rem;
+  background-color: #FFFFFF;
+  min-height: 696px;
+  text-align: center;
+}
+#coming-soon .about-wrap {
+  max-width: 850px;
+}
+#coming-soon span {
+  color: #07617d;
+}
+#coming-soon h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  color: #07617d;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#coming-soon h3::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 9.6rem;
+  background-color: rgba(149, 149, 149, 0.7);
+  margin: 0 auto 2.4rem;
+}
+#coming-soon .lead {
+  font-family: "librebaskerville-bold", serif;
+  font-size: 4rem;
+  line-height: 1.8;
+  color: #2e383f;
+  margin-top: 6rem;
+}
+
+#coming-soon .subscribe-form form .email-input {
+  display: flex;
+}
+
+#coming-soon .subscribe-form form input[type='email'] {
+  flex-grow: 1;
+}
+
+#coming-soon .subscribe-form form input[type='submit'] {
+  height: 6rem;
+  line-height: 6rem;
+}
 /* -------------------------------------------------------------------
  * responsive:
  * about
@@ -1895,7 +1950,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   min-height: 800px;
   position: relative;
   padding: 15rem 0 15rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 #services .overlay {
   position: absolute;
@@ -1924,7 +1979,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #FFFFFF;
 }
 #services .section-intro .lead {
-  color: rgba(242, 242, 242, 0.4);
+  color: rgba(242, 242, 242, 0.6);
 }
 #services .services-content {
   text-align: center;
@@ -1939,7 +1994,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0 50px;
 }
 #services .services-list .service-item p {
-  color: rgba(242, 242, 242, 0.5);
+  color: rgba(242, 242, 242, 0.7);
 }
 #services .services-list .icon {
   display: inline-block;
@@ -2020,7 +2075,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #FFFFFF;
 }
 #portfolio .section-intro .lead {
-  color: rgba(242, 242, 242, 0.4);
+  color: rgba(242, 242, 242, 0.6);
 }
 #portfolio .portfolio-content {
   margin-top: -22.2rem;
@@ -2533,7 +2588,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: rgba(242, 242, 242, 0.5);
 }
 #contact .section-intro p.lead {
-  color: rgba(242, 242, 242, 0.4);
+  color: rgba(242, 242, 242, 0.6);
 }
 
 .contact-content {
